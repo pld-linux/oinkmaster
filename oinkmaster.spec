@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	A tool to update Snort rules
 Summary(pl):	Narzêdzie do aktualizacji regu³ Snorta
 Name:		oinkmaster
@@ -9,7 +10,7 @@ Group:		Networking
 Source0:	ftp://ftp.it.su.se/pub/andreas/oinkmaster/%{name}-%{version}.tar.gz
 Patch0:		%{name}-config_path.patch
 URL:		http://nitzer.dhs.org/oinkmaster/
-Requires:	perl
+BuildRequires:	rpm-perlprov
 Requires:	snort
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
