@@ -32,7 +32,7 @@ regu³ami.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/{%{_sysconfdir}/oinkmaster,%{_bindir}}
+install -d $RPM_BUILD_ROOT{%{_sysconfdir}/oinkmaster,%{_bindir}}
 
 install oinkmaster.pl $RPM_BUILD_ROOT%{_bindir}
 install oinkmaster.conf $RPM_BUILD_ROOT%{_sysconfdir}/oinkmaster
