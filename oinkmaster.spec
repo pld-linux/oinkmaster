@@ -1,5 +1,5 @@
 Summary:	A tool to update Snort rules
-Summary(pl):	Narzêdzie do aktualizacji regu³ Snort'a
+Summary(pl):	Narzêdzie do aktualizacji regu³ Snorta
 Name:		oinkmaster
 Version:	0.6
 Release:	1
@@ -8,7 +8,7 @@ Vendor:		Andreas Östling <andreaso@it.su.se>
 Group:		Networking
 Source0:	ftp://ftp.it.su.se/pub/andreas/oinkmaster/%{name}-%{version}.tar.gz
 Patch0:		%{name}-config_path.patch
-URL:		http://nitzer.dhs.org/oinkmaster
+URL:		http://nitzer.dhs.org/oinkmaster/
 Requires:	perl
 Requires:	snort
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -19,14 +19,13 @@ unwanted ones after each update. It will tell you exactly what changed
 since the last update, giving you good control of your rules.
 
 %description -l pl
-oinkmaster pomaga w aktualizowaniu regu³ Snort'a, komentuje je po
-ka¿dej aktualizacji. Poinformuje cie dok³adnie co zosta³o zmienione od
-ostatniej aktualizacji, otrzymasz w ten sposób dobr± kontrole na
+oinkmaster pomaga w aktualizowaniu regu³ Snorta, zakomentowuj±c
+niechciane regu³y po ka¿dej aktualizacji. Poinformuje dok³adnie co
+zosta³o zmienione od ostatniej aktualizacji, daj±c dobr± kontrolê nad
 regu³ami.
 
 %prep
 %setup -q
-
 %patch0 -p1
 
 %install
