@@ -2,15 +2,15 @@
 Summary:	A tool to update Snort rules
 Summary(pl):	Narzêdzie do aktualizacji regu³ Snorta
 Name:		oinkmaster
-Version:	0.6
+Version:	1.1
 Release:	1
 License:	BSD
 Vendor:		Andreas Östling <andreaso@it.su.se>
 Group:		Networking
-Source0:	ftp://ftp.it.su.se/pub/andreas/oinkmaster/%{name}-%{version}.tar.gz
-# Source0-md5:	d447739b8f507282d6c13d951f347cf2
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	28cfaf6220f5fc3fa3f3838ea33cecf1
 Patch0:		%{name}-config_path.patch
-URL:		http://nitzer.dhs.org/oinkmaster/
+URL:		http://oinkmaster.sourceforge.net/
 BuildRequires:	rpm-perlprov
 Requires:	snort
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
