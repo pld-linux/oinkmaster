@@ -1,0 +1,11 @@
+--- oinkmaster-0.6/oinkmaster.pl.orig	Sat Jul  6 18:19:34 2002
++++ oinkmaster-0.6/oinkmaster.pl	Wed Feb 19 14:21:58 2003
+@@ -20,7 +20,7 @@
+ sub clean_exit;
+ 
+ my $version           = 'Oinkmaster v0.6 by Andreas Östling <andreaso@it.su.se>';
+-my $config_file       = "./oinkmaster.conf";
++my $config_file       = "/etc/oinkmaster/oinkmaster.conf";
+ my $tmpdir            = "/tmp/oinkmaster.$$";
+ my $outfile           = "snortrules.tar.gz";
+ my $verbose           = 0;
