@@ -1,11 +1,10 @@
---- oinkmaster-0.6/oinkmaster.pl.orig	Sat Jul  6 18:19:34 2002
-+++ oinkmaster-0.6/oinkmaster.pl	Wed Feb 19 14:21:58 2003
-@@ -20,7 +20,7 @@
- sub clean_exit;
+--- oinkmaster-1.1/oinkmaster.pl.orig	2004-10-09 13:28:24.000000000 +0000
++++ oinkmaster-1.1/oinkmaster.pl	2004-11-25 14:37:44.787973584 +0000
+@@ -131,6 +131,7 @@
+ # Default locations for configuration file.
+ my @DEFAULT_CONFIG_FILES = qw(
+     /etc/oinkmaster.conf
++    /etc/oinkmaster/oinkmaster.conf
+     /usr/local/etc/oinkmaster.conf
+ );
  
- my $version           = 'Oinkmaster v0.6 by Andreas Östling <andreaso@it.su.se>';
--my $config_file       = "./oinkmaster.conf";
-+my $config_file       = "/etc/oinkmaster/oinkmaster.conf";
- my $tmpdir            = "/tmp/oinkmaster.$$";
- my $outfile           = "snortrules.tar.gz";
- my $verbose           = 0;
