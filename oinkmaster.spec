@@ -8,6 +8,7 @@ License:	BSD
 Vendor:		Andreas Östling <andreaso@it.su.se>
 Group:		Networking
 Source0:	ftp://ftp.it.su.se/pub/andreas/oinkmaster/%{name}-%{version}.tar.gz
+# Source0-md5:	d447739b8f507282d6c13d951f347cf2
 Patch0:		%{name}-config_path.patch
 URL:		http://nitzer.dhs.org/oinkmaster/
 BuildRequires:	rpm-perlprov
