@@ -5,7 +5,6 @@ Name:		oinkmaster
 Version:	1.1
 Release:	1
 License:	BSD
-Vendor:		Andreas Östling <andreaso@it.su.se>
 Group:		Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
 # Source0-md5:	28cfaf6220f5fc3fa3f3838ea33cecf1
@@ -44,4 +43,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README UPGRADING ChangeLog INSTALL
 %attr(755,root,root) %{_bindir}/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/oinkmaster/oinkmaster.conf
+%dir %{_sysconfdir}/oinkmaster
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/oinkmaster/oinkmaster.conf
