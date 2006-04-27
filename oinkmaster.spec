@@ -12,7 +12,7 @@ Patch0:		%{name}-config_path.patch
 URL:		http://oinkmaster.sourceforge.net/
 BuildRequires:	rpm-perlprov
 Requires:	snort
-BuildArch:      noarch
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
