@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	A tool to update Snort rules
-Summary(pl.UTF-8):   Narzędzie do aktualizacji reguł Snorta
+Summary(pl.UTF-8):	Narzędzie do aktualizacji reguł Snorta
 Name:		oinkmaster
 Version:	2.0
 Release:	1
