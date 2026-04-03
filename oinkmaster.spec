@@ -2,7 +2,7 @@ Summary:	A tool to update Snort rules
 Summary(pl.UTF-8):	Narzędzie do aktualizacji reguł Snorta
 Name:		oinkmaster
 Version:	2.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Networking
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
